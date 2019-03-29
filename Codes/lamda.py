@@ -9,6 +9,8 @@ def find_lambda(path2):
         n=len(all_lines)
         for i in range(0,n):
             if "lambda" in all_lines[i]:
+                snippet+=path2
+                snippet+="\n"
                 if i>0:
                     snippet+=all_lines[i-1]
                     snippet+='\n'
@@ -19,7 +21,8 @@ def find_lambda(path2):
                     snippet+='\n'
                 snippet+="#########################################################################################"
                 snippet+='\n'
-                
+
+    
         f1.write(snippet)
     except:
         return 0
