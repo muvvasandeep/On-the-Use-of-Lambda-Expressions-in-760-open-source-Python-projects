@@ -11,10 +11,15 @@ def find_lambda(path2):
             if "lambda" in all_lines[i]:
                 if i>0:
                     snippet+=all_lines[i-1]
+                    snippet+='\n'
                 snippet+=all_lines[i]
+                snippet+='\n'
                 if i<n-1:
                     snippet+=all_lines[i+1]
-                snippet+="\n\n"
+                    snippet+='\n'
+                snippet+="#########################################################################################"
+                snippet+='\n'
+                
         f1.write(snippet)
     except:
         return 0
@@ -36,9 +41,9 @@ def visit(p):
         
     for k in all_files:
         if is_valid(k)==False:
-            visit(p+'\\'+k)
+            visit(p+os.path.sep+k)
         else:
-            find_lambda(p+'\\'+k)
+            find_lambda(p+os.path.sep+k)
             #print(k)
         
 def run(c):
@@ -47,9 +52,9 @@ def run(c):
         all_files=os.listdir(c)
         for file1 in all_files:
             if is_valid(file1)==False:   
-                visit(c+'\\'+file1)
+                visit(c+os.path.sep+file1)
             else:
-                find_lambda(c+'\\'+file1)
+                find_lambda(c+os.path.sep+file1)
                 #print(file1)
     else:
         find_lambda(c)
