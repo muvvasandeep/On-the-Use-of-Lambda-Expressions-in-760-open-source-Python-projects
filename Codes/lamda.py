@@ -1,14 +1,17 @@
 import os
-f1=open("lambda_occur.txt",'a')
+f1=open("lambdashubham_occur.txt",'a')
+count=0
 def find_lambda(path2):
     try:
-        f=open(path2)
+        f=open(path2,'r',encoding='utf-8')
         data=f.read()
         all_lines=data.split('\n')
         snippet=""
         n=len(all_lines)
         for i in range(0,n):
             if "lambda" in all_lines[i]:
+                global count
+                count+=1
                 snippet+=path2
                 snippet+="\n"
                 if i>0:
@@ -22,8 +25,8 @@ def find_lambda(path2):
                 snippet+="#########################################################################################"
                 snippet+='\n'
 
-    
-        f1.write(snippet)
+        
+            f1.write(snippet)
     except:
         return 0
 
@@ -54,6 +57,8 @@ def run(c):
     if is_valid(c)==False:   
         all_files=os.listdir(c)
         for file1 in all_files:
+            print(file1)
+            print(count)
             if is_valid(file1)==False:   
                 visit(c+os.path.sep+file1)
             else:
