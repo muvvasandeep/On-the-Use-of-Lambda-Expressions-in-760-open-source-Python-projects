@@ -1,0 +1,52 @@
+15-minute-apps-master 				- 4 exp , 0 unexp
+30-seconds-of-python-code-master   	- 13 exp, 13 unexp(inside comments + not a comment + can't say  anything because related to before lines )
+3DDFA-master						- 1 exp, 0 unexp
+ActualVim-master					- 1 exp, 2 unexp
+adanet-master						- 1 exp, 2 unexp
+ajenti-master						- 2 exp, 0 unexp
+Algorithms-master					- 3 exp, 5 unexp
+altair-master						- 2 exp, 1 unexp
+anaconda-master						- 2 exp, 3 unexp
+apprise-master						- 1 exp, 6 unexp
+apscheduler-master					- 1 exp, 0 unexp
+arctic-master						- 2 exp, 0 unexp
+Artificial-Intelligence-Deep-Learning-Machine-Learning-Tutorials-master		- 6 exp, 7 unexp
+astropy-master						- 30 exp, 9 unexp (117)
+autobahn-python-master				- 2 exp, 2 unexp
+autojump-master						- 1 exp, 2 unexp
+autopep8-master						- 2 exp, 1 unexp
+awesome-python-master				- 1 exp, 0 unexp
+aws-sam-cli-master					- 4 exp, 26 unexp (158)
+backtrader-master					- 6 exp, 0 unexp
+BayesianOptimization-master			- 1 exp, 0 unexp
+beets-master						- 3 exp, 0 unexp
+behave-master						- 0 exp, 3 unexp
+bigchaindb-master					- 1 exp, 2 unexp
+blockstack-core-master				- 7 exp, 0 unexp
+bokeh-master						- 9 exp, 1 unexp (191)
+boltons-master						- 1 exp, 3 unexp
+boto-master 						- 2 exp, 2 unexp
+bottle-master						- 2 exp, 0 unexp (201)
+buildbot-master						- 30 exp, 14 unexp
+BuildingMachineLearningSystemsWithPython-master		- 0 exp, 2 unexp
+Cactus-master						- 2 exp, 0 unexp
+calibre-master						- 50 exp, 17 unexp
+carbon-master						- 0 exp, 1 unexp (316)
+cartoonify-master					- 3, 0
+catalyst-master						- 6, 3
+cerberus-master						- 0, 1
+certbot-master						- 10, 3
+chainer-master						- 10, 1  (353)
+chalice-master						- 0, 120 (473)
+chartify-master						- 0, 1
+Cirq-master							- 2, 5
+ckan-master							- 6, 6
+click-master						- 0, 1
+coala-master						- 2, 1
+coconut-master						- 0, 1
+colorama-master						- 0, 1
+commix-master						- 1, 1 (500)
+
+
+233 -> exp
+267 -> unexp
