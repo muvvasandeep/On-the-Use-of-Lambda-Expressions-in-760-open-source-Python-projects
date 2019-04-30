@@ -1,5 +1,5 @@
 import os
-f1=open("lambdashubham_occur.txt",'a')
+f1=open("final_lambda_occur.txt",'w')
 count=0
 def find_lambda(path2):
     try:
@@ -9,7 +9,8 @@ def find_lambda(path2):
         snippet=""
         n=len(all_lines)
         for i in range(0,n):
-            if "lambda" in all_lines[i]:
+            snippet=""
+            if "lambda " in all_lines[i]:
                 global count
                 count+=1
                 snippet+=path2
@@ -49,6 +50,7 @@ def visit(p):
         if is_valid(k)==False:
             visit(p+os.path.sep+k)
         else:
+            #print(p+os.path.sep+k)
             find_lambda(p+os.path.sep+k)
             #print(k)
         
@@ -62,9 +64,11 @@ def run(c):
             if is_valid(file1)==False:   
                 visit(c+os.path.sep+file1)
             else:
+                #print(c+os.path.sep+file1)
                 find_lambda(c+os.path.sep+file1)
                 #print(file1)
     else:
+        
         find_lambda(c)
         #print(c)
 

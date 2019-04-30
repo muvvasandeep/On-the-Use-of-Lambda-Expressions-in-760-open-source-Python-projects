@@ -67,13 +67,13 @@ def extract_repo(driver):
         
 options = Options()
 options.add_argument("--disable-notifications") 
-driver = webdriver.Chrome(r"C:\Users\Shubham\Downloads\chromedriver_win32\chromedriver.exe",chrome_options=options)
+driver = webdriver.Chrome(r"C:\Users\muvva\Documents\chromedriver.exe",chrome_options=options)
 usr="shubham.rsangle@gmail.com"
 pwd ="cs16b026"
 login(driver,usr,pwd)
 url='https://github.com/'
 search="python"
-num_pages=1
+num_pages=100
 sear=search.split(' ')
 search_url=''
 for j in sear:
@@ -81,7 +81,7 @@ for j in sear:
 search_url=search_url[:-1]
 print(search_url)
 
-for z in range(1,1+num_pages):
+for z in range(0,1+num_pages):
     driver.get(url+'search?l=Python&o=desc&p='+str(z)+'&q=Python&s=stars&type=Repositories')
     #https://github.com/search?l=Python&o=desc&p=66&q=Python&s=stars&type=Repositories
     sleep(3)
@@ -94,7 +94,7 @@ for i in range(0,len(repo)):
 python_repos = dic["Python"]
 
 #driver.get('https://github.com/ansible/ansible/archive/master.zip')
-
+'''
 for i in range(0,len(python_repos)):
     try:
         print(python_repos[i])
@@ -107,7 +107,7 @@ for i in range(0,len(python_repos)):
     except:
         
         continue
-
+'''
 fsandeep.close()
 import json
 with open('result.json', 'w') as fp:

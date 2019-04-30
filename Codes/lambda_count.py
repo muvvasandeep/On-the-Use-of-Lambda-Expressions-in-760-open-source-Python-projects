@@ -13,8 +13,6 @@ c=input().strip()
 find_count(c)
 f.close()
 import json
-with open('repo_count.json', 'w') as fp:
-    json.dump(repo_count, fp)
-
-                    
+with open('repo_lambda_count.json', 'w') as fp:
+    json.dump(repo_count, fp)                    
         
