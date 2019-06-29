@@ -1,4 +1,4 @@
-# RISE
+# ISA - Intellegent Software Analytics
 Research project
 
 Link to dataset
