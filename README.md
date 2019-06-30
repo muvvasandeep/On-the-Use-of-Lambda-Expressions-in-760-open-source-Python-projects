@@ -1,4 +1,4 @@
-# ISA - Intellegent Software Analytics
+# iSHA - Intellegent Software & Human Analytics
 Research project
 
 Link to dataset
